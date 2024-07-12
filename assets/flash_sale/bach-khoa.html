@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bách Khoa Thư Về Phát Triển Kỹ Năng - Tuổi Dậy Thì</title>
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/base.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="back-top">
+    <div class="main">
+        <header class="container-fluid header">
+
+            <!-- Header -->
+            <div class="container-lg" style="max-width: 123rem;">
+                <!-- Header logo  -->
+                <div class="logo">
+                    <a href="#" class="logo-name">
+                        Nhat<span>Ebook</span>
+                    </a>
+                </div>
+
+                <!-- Header search  -->
+                <div class="header__search hide-navbar-on-mobile">
+                    <input type="text" class="header__search-input"
+                        placeholder="Hội sách online - Tìm kiếm sách bạn muốn...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Header History  -->
+                    <div class="header__search-history">
+                        <p class="header__search-keyword-hot">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Truyện tranh hot
+                        </p>
+
+                        <div class="header__search-history-book">
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Doraemon.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Túi thần kì của Doraemon
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Naruto.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Naruto Shippuden
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images//images_Header/Dragon_Ball.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Dragon Ball 7 Viên Ngọc Rồng
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/One_Piece.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    One Piece Đảo Hải Tặc
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header navbar  -->
+                <ul class="header__navbar hide-navbar-on-mobile">
+                    <li class="header__navbar-item">
+                        <a href="../../index.html" class="header__navbar-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-quantity" style="cursor: pointer;">
+                        <a href="../../checkout-details.html" class="header__navbar-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#footer" class="header__navbar-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--acount" style="cursor: pointer;">
+                        <a class="header__navbar-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+
+                        <div class="account">
+                            <button class="account__btn btn--primary-color js-register">Đăng Ký</button>
+                            <button class="account__btn btn--border-color js-login">Đăng Nhập</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Icon is shows menu on mobile  -->
+                <div class="header__icon-show-menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Navbar mobile  -->
+            <div class="navbar-mobile">
+                <!-- Header navbar  -->
+                <ul class="header__navbar">
+                    <li class="header__navbar-item">
+                        <a href="../../index.html" class="header__navbar-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-quantity" style="cursor: pointer;">
+                        <a href="../../checkout-details.html" class="header__navbar-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#footer" class="header__navbar-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--acount" style="cursor: pointer;">
+                        <a class="header__navbar-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+
+                        <div class="account">
+                            <button class="account__btn btn--primary-color js-register">Đăng Ký</button>
+                            <button class="account__btn btn--border-color js-login">Đăng Nhập</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Header search  -->
+                <div class="header__search">
+                    <input type="text" class="header__search-input"
+                        placeholder="Hội sách online - Tìm kiếm sách bạn muốn...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Header History  -->
+                    <div class="header__search-history">
+                        <p class="header__search-keyword-hot">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Truyện tranh hot
+                        </p>
+
+                        <div class="header__search-history-book">
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Doraemon.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Túi thần kì của Doraemon
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Naruto.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Naruto Shippuden
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images//images_Header/Dragon_Ball.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Dragon Ball 7 Viên Ngọc Rồng
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/One_Piece.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    One Piece Đảo Hải Tặc
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- product -->
+        <div class="container-fluid wrapper" style="padding-bottom: 0;">
+            <!-- details  -->
+            <div class="container-lg wrapper-product-details" style="max-width: 123rem;">
+                <div class="product-details-list js-product-details-list">
+                    <!-- Details left  -->
+                    <div class="product-details-left">
+                        <img src="../images/images_FlashSales/FlashSale_Book9.jpg" alt=""
+                            class="details-details-left__img">
+
+                        <div class="product-details-left__btn-box">
+                            <button type="button" class="btn-cart-to-cart js-add-to-cart" onclick="addToCart()">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Thêm vào giỏ hàng
+                            </button>
+                            <button type="button" class="btn-buy-now" onclick="buyNow()">
+                                Mua ngay
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Details right  -->
+                    <div class="product-details-right">
+                        <!-- Name  -->
+                        <h1 class="product-details-right__name">
+                            Bách Khoa Thư Về Phát Triển Kỹ Năng - Tuổi Dậy Thì
+                        </h1>
+
+                        <!-- Supplier & author  -->
+                        <div class="product-details-right__group">
+                            <span class="product-details-right__group-text">
+                                Nhà cung cấp:
+                                <span class="product-details-right__group-text-bold">
+                                    Đinh Tị
+                                </span>
+                            </span>
+                            <span class="product-details-right__group-text">
+                                Tác giả: <span class="product-details-right__group-text-bold">DK</span>
+                            </span>
+                        </div>
+
+                        <div class="product-details-right__group">
+                            <span class="product-details-right__group-text">
+                                Nhà xuất bản:
+                                <span class="product-details-right__group-text-bold">
+                                    Thanh Niên
+                                </span>
+                            </span>
+                            <span class="product-details-right__group-text">
+                                Hình thức bìa <span class="product-details-right__group-text-bold">Bìa Mềm</span>
+                            </span>
+                        </div>
+
+                        <!-- Price  -->
+                        <div class="product-details-right__price-box">
+                            <span class="product-details-right__new-price">201.000 đ</span>
+                            <span class="product-details-right__old-price">280.000 đ</span>
+                            <span class="product-details-right__sales">-28%</span>
+                        </div>
+
+                        <!-- Shipping  -->
+                        <div class="product-details-right__shipping">
+                            <span class="product-details-right__shipping-address">Giao hàng đến</span>
+                            <span class="product-details-right__shipping-address-change">Thay đổi</span>
+                        </div>
+
+                        <!-- Policy  -->
+                        <div class="product-details-right__policy">
+                            <span class="product-details-right__policy-text">Đổi trả sản phẩm trong 30 ngày</span>
+                            <span class="product-details-right__policy-read-more">Xem thêm</span>
+                        </div>
+
+                        <!-- Quantity  -->
+                        <div class="quantity-box">
+                            <label for="quantity" class="quantity-box__label">Số lượng:</label>
+                            <div class="quantity-box__wrap-span">
+                                <span class="quantity-box__span quantity-box__span--minus">
+                                    <i class="fa-solid fa-minus"></i>
+                                </span>
+                                <span class="quantity-box__span quantity-box__span--num">1</span>
+                                <span class="quantity-box__span quantity-box__span--plus">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- endow  -->
+            <div class="container-lg endow p-0" style="max-width: 123rem;">
+                <div class="tabslider">
+                    <!-- tabslider header  -->
+                    <div class="tabslider-header tabslider-header--bg-white">
+                        <i class="fa-solid fa-ticket" style="font-size: 2.6rem; margin-right: 1.5rem;"></i>
+                        <span class="tabslider-header__span" style="text-transform: uppercase; top: -0.2rem;">
+                            Ưu đãi liên quan
+                        </span>
+                    </div>
+
+                    <!-- Tabs  -->
+                    <div class="tabslider-content"
+                        style="border-bottom-left-radius: 0.8rem;border-bottom-right-radius: 0.8rem">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Mã giảm giá</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Mã thanh toán</button>
+                            </li>
+                        </ul>
+
+                        <hr style="margin: 0;">
+
+                        <!-- Content of tabs  -->
+                        <div class="tab-content" id="pills-tabContent" style="padding:2rem;">
+                            <!-- discount code  -->
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <!-- discount  -->
+                                <div class="discount-code">
+                                    <div class="discount-code__item">
+                                        <div class="discount-code__left">
+                                            <div class="discount-code__left-wrap">
+                                                <span class="discount-code__left-circle">%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="discount-code__right">
+                                            <span
+                                                class="discount-code__right-details discount-code__right-details--modal-1">
+                                                Chi tiết
+                                            </span>
+                                            <h3 class="discount-code__right-title">
+                                                MÃ GIẢM 10K - ĐƠN HÀNG TỪ 150K
+                                            </h3>
+                                            <p class="discount-code__right-desc">
+                                                Không Áp Dụng Cho Sách Giáo Khoa
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="discount-code__item">
+                                        <div class="discount-code__left">
+                                            <div class="discount-code__left-wrap">
+                                                <span class="discount-code__left-circle">%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="discount-code__right">
+                                            <span
+                                                class="discount-code__right-details discount-code__right-details--modal-2">
+                                                Chi tiết
+                                            </span>
+                                            <h3 class="discount-code__right-title">
+                                                MÃ GIẢM 30K - ĐƠN HÀNG TỪ 400K
+                                            </h3>
+                                            <p class="discount-code__right-desc">
+                                                Không Áp Dụng Cho Sách Giáo Khoa
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="discount-code__item">
+                                        <div class="discount-code__left">
+                                            <div class="discount-code__left-wrap">
+                                                <span class="discount-code__left-circle">%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="discount-code__right">
+                                            <span
+                                                class="discount-code__right-details discount-code__right-details--modal-3">
+                                                Chi tiết
+                                            </span>
+                                            <h3 class="discount-code__right-title">
+                                                MÃ GIẢM 50K - ĐƠN HÀNG TỪ 500K
+                                            </h3>
+                                            <p class="discount-code__right-desc">
+                                                Không Áp Dụng Cho Sách Giáo Khoa
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- payment code  -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <!-- payment  -->
+                                <div class="discount-code">
+                                    <div class="discount-code__item">
+                                        <div class="discount-code__left">
+                                            <div class="discount-code__left-wrap discount-code__left-wrap--blue">
+                                                <span
+                                                    class="discount-code__left-circle discount-code__left-circle--not-circle">
+                                                    <i class="fa-solid fa-credit-card"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="discount-code__right">
+                                            <span class="discount-code__right-details discount-code__right-details--1">
+                                                Chi tiết
+                                            </span>
+                                            <h3 class="discount-code__right-title discount-code__right-title--blue">
+                                                SHOPEEPAY: GIẢM 10K CHO ĐH TỪ 200K
+                                            </h3>
+                                            <p class="discount-code__right-desc">
+                                                Nhập mã "SPPFHST4": Giảm 10K cho ĐH 200.000Đ - Nhập mã tại SHOPEEPAY -
+                                                Số lượng có hạn
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="discount-code__item">
+                                        <div class="discount-code__left">
+                                            <div class="discount-code__left-wrap discount-code__left-wrap--blue">
+                                                <span
+                                                    class="discount-code__left-circle discount-code__left-circle--not-circle">
+                                                    <i class="fa-solid fa-credit-card"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="discount-code__right">
+                                            <span class="discount-code__right-details discount-code__right-details--2">
+                                                Chi tiết
+                                            </span>
+                                            <h3 class="discount-code__right-title discount-code__right-title--blue">
+                                                SACOMBANK: HOÀN 50.000Đ CHO ĐƠN HÀNG TỪ 300.000Đ
+                                            </h3>
+                                            <p class="discount-code__right-desc">
+                                                Thanh toán bằng thẻ tín dụng Sacombank: Hoàn ngay 50.000Đ - SỐ LƯỢNG CÓ
+                                                HẠN
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="discount-code__item">
+                                        <div class="discount-code__left">
+                                            <div class="discount-code__left-wrap discount-code__left-wrap--blue">
+                                                <span
+                                                    class="discount-code__left-circle discount-code__left-circle--not-circle">
+                                                    <i class="fa-solid fa-credit-card"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="discount-code__right">
+                                            <span class="discount-code__right-details discount-code__right-details--3">
+                                                Chi tiết
+                                            </span>
+                                            <h3 class="discount-code__right-title discount-code__right-title--blue">
+                                                ZALOPAY: GIẢM 10K CHO ĐƠN HÀNG TỪ 300K
+                                            </h3>
+                                            <p class="discount-code__right-desc">
+                                                Nhập mã "ZLPFHS": Giảm 10K cho ĐH 300K(Áp dụng cho khách đã từng thanh
+                                                toán bằng ZaloPay )
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- info  -->
+            <div class="container-lg product-info" style="max-width: 123rem;">
+                <h3 class="product-info__title">Thông tin sản phẩm</h3>
+
+                <table class="product-info__table">
+                    <colgroup>
+                        <col width="25%">
+                        <col>
+                    </colgroup>
+
+                    <tbody>
+                        <tr>
+                            <td>Mã hàng</td>
+                            <td>8935212359641</td>
+                        </tr>
+                        <tr>
+                            <td>Tên Nhà Cung Cấp</td>
+                            <td>Đinh Tị</td>
+                        </tr>
+                        <tr>
+                            <td>Tác giả</td>
+                            <td>DK</td>
+                        </tr>
+                        <tr>
+                            <td>NXB</td>
+                            <td>Thanh Niên</td>
+                        </tr>
+                        <tr>
+                            <td>Năm XB</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>Trọng lượng (gr)</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>Kích Thước Bao Bì</td>
+                            <td>23 x 19 cm</td>
+                        </tr>
+                        <tr>
+                            <td>Số trang</td>
+                            <td>256</td>
+                        </tr>
+                        <tr>
+                            <td>Hình thức</td>
+                            <td>Bìa Mềm</td>
+                        </tr>
+                        <tr>
+                            <td>Sản phẩm bán chạy nhất</td>
+                            <td>Top 100 sản phẩm Bách Khoa Tri Thức - Câu Hỏi Vì Sao bán chạy của tháng</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="product-info__description">
+                    <p>
+                        Giá sản phẩm trên NhatEbook đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản
+                        phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như Phụ phí đóng gói,
+                        phí vận chuyển, phụ phí hàng cồng kềnh,... <br>
+                        <span>
+                            Chính sách khuyến mãi trên NhatEbook không áp dụng cho Hệ thống Nhà sách NhatEbook trên toàn
+                            quốc
+                        </span>
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="product-info__content">
+                    <p style="font-weight: bold;">
+                        Bách Khoa Thư Về Phát Triển Kỹ Năng - Tuổi Dậy Thì
+                    </p>
+                    <p class="m-0">
+                        Dậy thì - quá trình chuyển tiếp từ một đứa trẻ thành một thanh niên, là một trong những giai
+                        đoạn đáng kinh ngạc nhất trong toàn bộ cuộc đời của một con người. Lứa tuổi dậy thì với mỗi bạn
+                        trẻ có thể đầy thú vị, vui nhộn hay kỳ diệu, nhưng cũng có thể sẽ vô cùng khó khăn, bối rối và
+                        căng thẳng. Thật khó để không cảm thấy tự ti và căng thẳng trong khoảng thời gian đầy xáo trộn
+                        như thế, khi cơ thể của chúng ta dường như không còn là cơ thể của chúng ta nữa và bản sắc cá
+                        nhân của chúng ta thì liên tục thay đổi. Cha mẹ của các bạn trẻ đang ở lứa tuổi dậy thì chắc
+                        chắn cũng sẽ tràn đầy cảm xúc như thế.
+                    </p>
+                </div>
+            </div>
+
+            <!-- attribute  -->
+            <div class="container-lg product-attribute" style="max-width: 123rem;">
+                <div class="product-attribute__item product-attribute__item--modal-1">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>Chính Sách Khách Sỉ</span>
+                </div>
+                <div class="product-attribute__item product-attribute__item--modal-2">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>Thời Gian Giao Hàng</span>
+                </div>
+                <div class="product-attribute__item product-attribute__item--modal-3">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>Chính Sách Đổi Trả</span>
+                </div>
+            </div>
+
+            <!-- footer  -->
+            <div id="footer" class="container-lg" style="max-width: 123rem;">
+                <div class="row footer" style="padding: 2.6rem 1.2rem;">
+                    <!-- Footer column Left  -->
+                    <div class="col-lg-4 col-md-4 col-12 footer__logo">
+                        <p class="logo-name" style="font-size: 5rem; margin: 0;">
+                            Nhat<span style="font-size: 3.6rem;">Ebook</span>
+                        </p>
+                        <p class="footer__logo-text">
+                            NhatEbook Nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng
+                            trực tiếp tại văn phòng cũng như tất cả hệ thống trên toàn quốc.
+                        </p>
+                        <div class="footer__social-media">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer column Right  -->
+                    <div class="col-lg-8 col-md-8 col-12 footer__info">
+                        <div class="row">
+                            <!-- Begin: Service  -->
+                            <div class="col-lg-4 col-md-6 col-6 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    DỊCH VỤ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/dieu-khoan-su-dung.html"
+                                            class="footer__info-link">Điều khoản sử dụng</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/chinh-sach-bao-mat.html"
+                                            class="footer__info-link">Chính sách bảo mật thông tin cá
+                                            nhân</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/bao-mat-pay.html"
+                                            class="footer__info-link">Chính sách bảo mật thanh toán</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/gioi-thieu-NhatEbook.html"
+                                            class="footer__info-link">Giới thiệu NhatEbook</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Service  -->
+
+                            <!-- Begin: Support -->
+                            <div class="col-lg-4 col-md-6 col-6 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    HỖ TRỢ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/doi-tra-hoan-tien.html"
+                                            class="footer__info-link">Chính sách đổi - trả - hoàn tiền</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/chinh-sach-bao-hanh.html"
+                                            class="footer__info-link">Chính sách bảo hành - bồi hoàn</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/van-chuyen.html"
+                                            class="footer__info-link">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/tutorial-pay.html"
+                                            class="footer__info-link">Phương thức thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Support -->
+
+                            <!-- Begin: Contact  -->
+                            <div class="col-lg-4 col-md-6 col-6 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    LIÊN HỆ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            TP. Hồ Chí Minh
+                                        </span>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            nhatebook@gmail.com
+                                        </span>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-phone"></i>
+                                            123456789
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Contact  -->
+                        </div>
+                    </div>
+
+                    <!-- Footer Pay   -->
+                    <div class="row text-center">
+                        <div class="row mt-5">
+                            <div class="col-lg-3 col-md-3 col-6 mb-4">
+                                <img src="../images/images_footer/IMG_Pay1.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay2.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay3.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay4.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay5.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay6.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay7.png" alt="" width="26%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay8.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer copyright  -->
+                    <div class="footer__copyright">
+                        <p>&copy; 2024 Tăng Minh Nhật, Inc. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal btn change -->
+    <div class="product-details-right__modal">
+        <div class="product-details-right__modal-container">
+            <!-- Modal header  -->
+            <div class="product-details-right__modal-header">
+                <h3>Chọn địa chỉ giao hàng của bạn</h3>
+            </div>
+
+            <!-- Modal body  -->
+            <div class="product-details-right__modal-body">
+                <!-- Label  -->
+                <div class="product-details-right__modal-wrap">
+                    <span class="product-details-right__modal-wrap-label">Tỉnh/Thành Phố</span>
+
+                    <!-- Menu dropdown  -->
+                    <div class="product-details-right__modal-dropdown">
+                        <div class="product-details-right__modal-select">
+                            <span class="js-modal-selected">Chọn Tỉnh/Thành Phố</span>
+                            <span class="product-details-right__modal-caret-down"></span>
+                        </div>
+
+                        <ul class="product-details-right__modal-option">
+                            <li class="product-details-right__modal-option-active">Hồ Chí Minh</li>
+                            <li>Hải Phòng</li>
+                            <li>Hà Nội</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hưng Yên</li>
+                            <li>Hải Dương</li>
+                            <li>Quảng Ninh</li>
+                            <li>Bắc Ninh</li>
+                            <li>Bắc Giang</li>
+                            <li>Bắc Kạn</li>
+                            <li>Lạng Sơn</li>
+                            <li>Thái Nguyên</li>
+                            <li>Cao Bằng</li>
+                            <li>Vĩnh Phúc</li>
+                            <li>Phú Thọ</li>
+                            <li>Tuyên Quang</li>
+                            <li>Hà Giang</li>
+                            <li>Yên Bái</li>
+                            <li>Lào Cai</li>
+                            <li>Hòa Bình</li>
+                            <li>Sơn La</li>
+                            <li>Điện Biên</li>
+                            <li>Lai Châu</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Label  -->
+                <div class="product-details-right__modal-wrap">
+                    <span class="product-details-right__modal-wrap-label">Quận/Huyện</span>
+
+                    <!-- Menu dropdown  -->
+                    <div class="product-details-right__modal-dropdown">
+                        <div class="product-details-right__modal-select">
+                            <span class="js-modal-selected">Chọn Quận/Huyện</span>
+                            <span class="product-details-right__modal-caret-down"></span>
+                        </div>
+
+                        <ul class="product-details-right__modal-option">
+                            <li class="product-details-right__modal-option-active">Quận 1</li>
+                            <li>Quận 2</li>
+                            <li>Quận 3</li>
+                            <li>Quận 4</li>
+                            <li>Quận 5</li>
+                            <li>Quận 6</li>
+                            <li>Quận 7</li>
+                            <li>Quận 8</li>
+                            <li>Quận 9</li>
+                            <li>Quận 10</li>
+                            <li>Quận 11</li>
+                            <li>Quận 12</li>
+                            <li>Quận Gò Vấp</li>
+                            <li>Quận Tân Bình</li>
+                            <li>Quận Tân Phú</li>
+                            <li>Quận Bình Thạnh</li>
+                            <li>Quận Phú Nhuận</li>
+                            <li>Quận Bình Tân</li>
+                            <li>Thành Phố Thủ Đức</li>
+                            <li>Huyện Bình Chánh</li>
+                            <li>Huyện Củ Chi</li>
+                            <li>Huyện Hóc Môn</li>
+                            <li>Huyện Nhà Bè</li>
+                            <li>Huyện Cần Giờ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Label  -->
+                <div class="product-details-right__modal-wrap">
+                    <span class="product-details-right__modal-wrap-label">Phường/Xã</span>
+
+                    <!-- Menu dropdown  -->
+                    <div class="product-details-right__modal-dropdown">
+                        <div class="product-details-right__modal-select">
+                            <span class="js-modal-selected">Chọn Phường/Xã</span>
+                            <span class="product-details-right__modal-caret-down"></span>
+                        </div>
+
+                        <ul class="product-details-right__modal-option">
+                            <li class="product-details-right__modal-option-active">Phường Bến Nghé</li>
+                            <li>Phường Bến Thành</li>
+                            <li>Phường Cầu Kho</li>
+                            <li>Phường Cầu Ông Lãnh</li>
+                            <li>Phường Cô Giang</li>
+                            <li>Phường Đa Kao</li>
+                            <li>Phường Nguyễn Cư Trinh</li>
+                            <li>Phường Bình Trị Đông</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal footer  -->
+            <div class="product-details-right__modal-footer">
+                <button class="product-details-right__modal-btn-close" type="button">Hủy</button>
+                <button class="product-details-right__modal-btn-confirm" type="button">
+                    Xác nhận
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal endow 1 -->
+    <div class="endow__modal endow__modal--1">
+        <div class="endow__modal-bg endow__modal-bg--1">
+            <div class="endow__modal-title endow__modal-title--1">
+                <h3>Điều kiện áp dụng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="endow__modal-content">
+                <p>Mã giảm giá</p>
+                <p>Mã giảm giá 10K cho đơn hàng từ 150K</p>
+                <p>
+                    - Điều kiện áp dụng: áp dụng cho đơn hàng từ 150K, không áp dụng cho đơn hàng có sản phẩm Phiếu
+                    Quà Tặng
+                </p>
+                <p>
+                    - Thời gian áp dụng: Đến hết Tháng 4/2024
+                </p>
+                <p>
+                    - Khách hàng có thể áp dụng cùng lúc với mã giảm phí vận chuyển
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal endow 2 -->
+    <div class="endow__modal endow__modal--2">
+        <div class="endow__modal-bg endow__modal-bg--2">
+            <div class="endow__modal-title endow__modal-title--2">
+                <h3>Điều kiện áp dụng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="endow__modal-content">
+                <p>Mã giảm giá</p>
+                <p>Mã giảm giá 30K cho đơn hàng từ 400K</p>
+                <p>
+                    - Điều kiện áp dụng: áp dụng cho đơn hàng từ 400K, không áp dụng cho đơn hàng có sản phẩm Phiếu
+                    Quà Tặng
+                </p>
+                <p>
+                    - Thời gian áp dụng: Đến hết Tháng 4/2024
+                </p>
+                <p>
+                    - Khách hàng có thể áp dụng cùng lúc với mã giảm phí vận chuyển
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal endow 3 -->
+    <div class="endow__modal endow__modal--3">
+        <div class="endow__modal-bg endow__modal-bg--3">
+            <div class="endow__modal-title endow__modal-title--3">
+                <h3>Điều kiện áp dụng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="endow__modal-content">
+                <p>Mã giảm giá</p>
+                <p>Mã giảm giá 50K cho đơn hàng từ 500k</p>
+                <p>
+                    - Điều kiện áp dụng: áp dụng cho đơn hàng từ 500K, không áp dụng cho đơn hàng có sản phẩm Phiếu
+                    Quà Tặng
+                </p>
+                <p>
+                    - Thời gian áp dụng: Đến hết Tháng 4/2024
+                </p>
+                <p>
+                    - Khách hàng có thể áp dụng cùng lúc với mã giảm phí vận chuyển
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal endow 4 -->
+    <div class="endow__modal endow__modal--4">
+        <div class="endow__modal-bg endow__modal-bg--4">
+            <div class="endow__modal-title endow__modal-title--4">
+                <h3>Điều kiện áp dụng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="endow__modal-content">
+                <p style="font-weight: bold;">
+                    Giảm 10K cho đơn hàng từ 200.000Đ , nhập mã "SPPFHST4" - Thời gian áp dụng từ 01/04/2024 đến
+                    30/04/2024
+                </p>
+                <p style="
+                background-color: #e1eaf4;
+                padding: 8px 16px;
+                color: #2F80ED;">
+                    Mã: SPPFHST4 - Giảm10K cho đơn hàng từ 200K- Nhập mã tại Ví ShopeePay
+                </p>
+                <p>
+                    HSD:01/04/2024 - 30/04/2024
+                </p>
+                <p>
+                    Điều kiện áp dụng: Cho đơn hàng từ 200.000Đ, Chương trình Áp dụng cho tất cả khách hàng (New user
+                    và User của ShopeePay) giao dịch mua sắm và thanh toán bằng ShopeePay tại web/app FAHASA .
+                </p>
+                <p style="font-weight: bold;">
+                    Lưu ý:
+                </p>
+                <p>
+                    - Mỗi khách hàng được sử dụng mã khuyến mại 2 lần/khách hàng/ tháng trong chương trình.
+                </p>
+                <p style="font-weight: bold;">
+                    Các bước nhận ưu đãi:
+                </p>
+                <p>
+                    B1. Truy cập Website/App Fahasa và mua đơn hàng. <br>
+                    B2. Tại bước thanh toán, chọn thanh toán bằng <span style="font-weight: bold;">"Ví ShopeePay"</span>
+                    <br>
+                    B3. Trên Ví ShopeePay, chọn mục <span style="font-weight: bold;">"Coupon"</span> và nhập mã:
+                    <span style="font-weight: bold;">"SPPFHST4"</span><br>
+                    B4. Kiểm tra đơn hàng sau khi được giảm và bấm
+                    <span style="font-weight: bold;">"Xác nhận"</span> để hoàn tất thanh toán.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal endow 5 -->
+    <div class="endow__modal endow__modal--5">
+        <div class="endow__modal-bg endow__modal-bg--5">
+            <div class="endow__modal-title endow__modal-title--5">
+                <h3>Điều kiện áp dụng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="endow__modal-content">
+                <p style="font-weight: bold;">
+                    Hoàn tiền 50.000đ cho HĐ từ 300.000đ - Thời gian áp dụng: Thứ 7 và chủ nhật hàng tuần, từ ngày
+                    01/04/2024- 30/06/2024
+                </p>
+                <p style="
+                background-color: #e1eaf4;
+                padding: 8px 16px;
+                color: #2F80ED;">
+                    SACOMBANK - Hoàn tiền 50.000đ - Thanh toán ngay bằng THẺ TÍN DỤNG SACOMBANK
+                </p>
+                <p>
+                    Áp dụng: Thứ 7 và chủ nhật hàng tuần, từ ngày 01/04/2024 - 30/06/2024
+                </p>
+                <p>
+                    Điều kiện áp dụng: Đơn hàng từ 300.000Đ
+                </p>
+                <p style="font-weight: bold;">
+                    Lưu ý:
+                </p>
+                <p>
+                    - Mỗi Chủ thẻ Sacombank được ưu đãi 02 lần trong thời gian chương trình (Bao gồm 01 lần ưu đãi cho
+                    giao dịch trực tiếp (giao dịch hợp lệ tại hệ thống nhà sách) và 01 lần ưu đãi cho giao dịch trực
+                    truyến (giao dịch hợp lệ tại ứng dụng/website Fahasa) trong thời gian chương trình. Nếu Chủ thẻ sở
+                    hữu nhiều thẻ ưu đãi sẽ áp dụng cho 02 giao dịch hợp lệ đầu tiên (xác định “Chủ thẻ” theo số CMND/
+                    CCCD/ Hộ chiếu cập nhật tại hệ thống Sacombank))
+                </p>
+                <p style="font-weight: bold;">
+                    Các bước nhận ưu đãi:
+                </p>
+                <p>
+                    B1. Truy cập Website/App Fahasa và mua đơn hàng. <br>
+                    B2. Tại bước thanh toán, chọn thanh toán bằng thẻ Visa. <br>
+                    B3. Kiểm tra đơn hàng và điều kiện áp dụng phù hợp với tiêu chí chương trình. <br>
+                    B4. Thanh toán và đợi hoàn tiền sau 30 ngày chương trình kết thúc. <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal endow 6 -->
+    <div class="endow__modal endow__modal--6">
+        <div class="endow__modal-bg endow__modal-bg--6">
+            <div class="endow__modal-title endow__modal-title--6">
+                <h3>Điều kiện áp dụng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="endow__modal-content">
+                <p style="font-weight: bold;">
+                    Giảm 10K cho đơn hàng từ 300K (Áp dụng cho khách đã từng thanh toán bằng ZaloPay) nhập mã "ZLPFHS"
+                    - Áp dụng khi thanh toán bằng Ví ZaloPay
+                </p>
+                <p style="
+                    background-color: #e1eaf4;
+                    padding: 8px 16px;
+                    color: #2F80ED;">
+                    Mã: ZLPFHS - Giảm 10k - Nhập mã tại ví ZALOPAY
+                </p>
+                <p>
+                    Thời gian chương trình: 01/04/2024 - 30/04/2024
+                </p>
+                <p>
+                    Điều kiện áp dụng: Đơn hàng từ 300K
+                </p>
+                <p style="font-weight: bold;">
+                    Lưu ý:
+                </p>
+                <p>
+                    - Mỗi Khách hàng hoặc ZaloPay ID hoặc điện thoại được nhận 1 lần khuyến mại/1 chương trình/1 tháng.
+                </p>
+                <p style="font-weight: bold;">
+                    Các bước nhận ưu đãi:
+                </p>
+                <p>
+                    B1: Truy cập Website/Ứng dụng, thực hiện mua hàng tại Fahasa.com. <br>
+                    B2: Chọn thanh toán bằng Ví ZaloPay <br>
+                    B3: Mở ZaloPay và chọn <span style="font-weight: bold;">"Quét mã QR"</span> <br>
+                    B4: Trên màn hình thông tin thanh toán đơn hàng của ZaloPay, chọn mục <span
+                        style="font-weight: bold;">"Ưu đãi"</span> <br>
+                    B5: Tại ứng dụng Ví Zalopay, kiểm tra đơn hàng, nhập <span
+                        style="font-weight: bold;">"ZLPFHS"</span> tại ô mã giảm giá. <br>
+                    B6: Kiểm tra đơn hàng và bấm <span style="font-weight: bold;">“Xác nhận”</span> để hoàn tất thanh
+                    toán.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal attribute 1 -->
+    <div class="attribute__modal attribute__modal--1">
+        <div class="attribute__modal-bg attribute__modal-bg--1">
+            <div class="attribute__modal-title attribute__modal-title--1">
+                <h3>CHÍNH SÁCH KHÁCH SỈ</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="attribute__modal-content">
+                <p>
+                    Hiện nay, do mức chiết khấu trên NhatEbook rất cao, đặc biệt vào các thời điểm chạy chương trình.
+                    Do đó đối với mỗi chương trình số lượng sản phẩm giảm sốc có giới hạn nhất định, vì vậy để đảm bảo
+                    quyền lợi của từng khách hàng, chúng tôi xin thông báo tiêu chí xét “Đơn Hàng Sỉ” và chính sách như
+                    sau:
+                </p>
+                <p class="mb-0">
+                    1. Đơn hàng được gọi là “đơn hàng sỉ” khi có tổng giá trị các đơn hàng trong 1 ngày có giá trị: từ
+                    3.000.000 đồng (Ba triệu đồng) trở lên.
+                </p>
+                <p>
+                    - Các đơn hàng có cùng thông tin người mua hàng (cùng số điện thoại, cùng email hoặc cùng địa chỉ
+                    nhận hàng) thì được tính là đơn hàng của 1 khách hàng.
+                </p>
+                <p class="mb-0">
+                    2. Chính sách giá (% chiết khấu giảm giá). Đây là chính sách chung chỉ mang tính tương đối. Xin quý
+                    khách vui lòng liên lạc với NhatEbook để có chính sách giá chính xác nhất:
+                </p>
+                <p class="mb-0">
+                    - Đối với Nhóm hàng sách kinh tế, Văn học: áp dụng mức giảm giá trên web tối đa không vượt quá 30%.
+                </p>
+                <p class="mb-0">
+                    - Đối với Nhóm hàng sách thiếu nhi và tâm lý kỹ năng: áp dụng mức giảm giá trên web tối đa không
+                    vượt quá 20%.
+                </p>
+                <p>
+                    - Đối với Nhóm hàng sách từ điển và sách ngoại văn : áp dụng mức giảm giá trên web tối đa không vượt
+                    quá 10%.
+                </p>
+                <p class="mb-0">
+                    Quý khách có nhu cầu mua sỉ, vui lòng liên hệ phòng kinh doanh NhatEbook: 123 456 789 hoặc Email:
+                    <span style="color: var(--primary-color);">nhatebook@.com.vn.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal attribute 2 -->
+    <div class="attribute__modal attribute__modal--2">
+        <div class="attribute__modal-bg attribute__modal-bg--2">
+            <div class="attribute__modal-title attribute__modal-title--2">
+                <h3>Thời gian giao hàng</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="attribute__modal-content">
+                <p>
+                    THÔNG TIN ĐÓNG GÓI, VẬN CHUYỂN HÀNG
+                </p>
+                <p>
+                    Với đa phần đơn hàng, NhatEbook cần vài giờ làm việc để kiểm tra thông tin và đóng gói hàng. Nếu
+                    các sản phẩm đều có sẵn hàng, NhatEbook sẽ nhanh chóng bàn giao cho đối tác vận chuyển. Nếu đơn
+                    hàng có sản phẩm sắp phát hành, NhatEbook sẽ ưu tiên giao những sản phẩm có hàng trước cho Quý
+                    khách hàng.
+                </p>
+                <p>
+                    Trong một số trường hợp, hàng nằm không có sẵn tại kho gần nhất, thời gian giao hàng có thể chậm hơn
+                    so với dự kiến do điều hàng. Các phí vận chuyển phát sinh, NhatEbook sẽ hỗ trợ hoàn toàn.
+                </p>
+                <p>
+                    Thời gian giao hàng không tính thứ 7, Chủ nhật, các ngày Lễ, Tết và không bao gồm tuyến huyện đảo
+                    xa.
+                </p>
+                <p>
+                    THỜI GIAN VÀ CHI PHÍ GIAO HÀNG TẠI TỪNG KHU VỰC TRONG LÃNH THỔ VIỆT NAM:
+                </p>
+                <p class="mb-0">
+                    1. Nội thành TP.HCM và Hà Nội
+                </p>
+                <p>
+                    Thời gian: 1-2 ngày <br>
+                    Chi phí: 15.000đ/ đơn hàng (không giới hạn giá trị, áp dụng từ 02.11.2021)
+                </p>
+                <p class="mb-0">
+                    2. Các tỉnh thành khác
+                </p>
+                <p>
+                    Thời gian: 2-3 ngày <br>
+                    Chi phí: 30.000đ/ đơn hàng (không giới hạn giá trị, áp dụng từ 02.11.2021)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal attribute 3 -->
+    <div class="attribute__modal attribute__modal--3">
+        <div class="attribute__modal-bg attribute__modal-bg--3">
+            <div class="attribute__modal-title attribute__modal-title--3">
+                <h3>Chính sách đổi trả</h3>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="attribute__modal-content attribute__modal-content--3 ">
+                <p style="text-align: center;">
+                    Chính sách đổi / trả / hoàn tiền
+                </p>
+                <p style="text-align: center;">
+                    Áp dụng cho toàn bộ đơn hàng của quý khách tại NhatEbook
+                </p>
+                <p class="mb-0">
+                    1. ĐĂNG KÝ ĐỔI TRẢ HÀNG
+                </p>
+                <p>
+                    - Liên hệ NhatEbook qua hotline 123 456 789 hoặc gửi email về cskh@nhatebook.com.vn với tiều đề
+                    "Đổi Trả Đơn Hàng" để đăng ký đổi / trả kể cả thứ 7, chủ nhật
+                </p>
+                <p class="mb-0">
+                    2. XÁC NHẬN ĐĂNG KÝ ĐỔI / TRẢ
+                </p>
+                <p>
+                    - NhatEbook tiếp nhận thông tin, xác nhận qua hotline
+                </p>
+                <p class="mb-0">
+                    3. MIỄN PHÍ GỬI HÀNG VỀ NHATEBOOK
+                </p>
+                <p>
+                    - NhatEbook thu hồi sản phẩm miễn phí tận nơi, trên toàn quốc
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal register  -->
+    <div class="register">
+        <div class="register__container">
+            <div class="register__tabs">
+                <div class="register__tabs-item">
+                    Đăng nhập
+                </div>
+                <div class="register__tabs-item register__tabs-item-active">
+                    Đăng ký
+                </div>
+            </div>
+
+            <div class="register__input-box">
+                <form action="">
+                    <div class="register__phone">
+                        <label for="email" class="register__phone-label">Tên người dùng</label>
+                        <input id="email" class="register__phone-input" type="email" placeholder="Nhập họ tên">
+                    </div>
+
+                    <div class="register__password">
+                        <label for="password" class="register__password-label">Mật khẩu</label>
+                        <input id="password" class="register__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="register__password-span show-hide" id="show-register">Hiện</span>
+                    </div>
+
+                    <div class="register__password">
+                        <label for="confirm_password" class="register__password-label">Xác nhận Mật khẩu</label>
+                        <input id="confirm_password" class="register__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="register__password-span show-hide" id="show-confirm">Hiện</span>
+                    </div>
+
+                    <div class="register__btn-box">
+                        <button type="button" class="register__btn-register" id="js-btn-register">Đăng ký</button>
+                        <button type="button" class="register__btn-skip">Bỏ qua</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="register__term">
+                <p>Bằng việc đăng ký, bạn đã đồng ý với NhatEbook về</p>
+                <p>
+                    <a href="../footer-pages/dieu-khoan-su-dung.html">Điều khoản dịch vụ</a> &
+                    <a href="../footer-pages/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal login  -->
+    <div class="login">
+        <div class="login__container">
+            <div class="login__tabs">
+                <div class="login__tabs-item register__tabs-item-active">
+                    Đăng nhập
+                </div>
+                <div class="login__tabs-item login__tabs-item--change-to-register">
+                    Đăng ký
+                </div>
+            </div>
+
+            <div class="login__input-box">
+                <form action="">
+                    <div class="login__phone">
+                        <label for="email_login" class="login__phone-label">Tên người dùng</label>
+                        <input id="email_login" class="login__phone-input" type="email"
+                            placeholder="Nhập tên bạn đăng ký">
+                    </div>
+
+                    <div class="login__password">
+                        <label for="password_login" class="login__password-label">Mật khẩu</label>
+                        <input id="password_login" class="login__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="login__password-span show-hide" id="show-login">Hiện</span>
+                    </div>
+
+                    <div class="login__btn-box">
+                        <button type="button" class="login__btn-login" id="js-btn-login">Đăng nhập</button>
+                        <button type="button" class="login__btn-skip">Bỏ qua</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+
+    <!-- Open and Close Login & Register  -->
+    <script>
+        // register 
+        const btnsRegister = document.querySelectorAll('.js-register');
+        const register = document.querySelector('.register');
+        const registerSkip = document.querySelector('.register__btn-skip');
+        const registerContainer = document.querySelector('.register__container');
+        const btnChangeRegister = document.querySelector('.login__tabs-item--change-to-register');
+
+
+        function showRegister() {
+            register.style.display = 'flex'
+        }
+
+        function hideRegister() {
+            register.style.display = 'none'
+        }
+
+        btnsRegister.forEach((btnRegister) => {
+            btnRegister.addEventListener('click', showRegister);
+        })
+        btnChangeRegister.addEventListener('click', showRegister);
+        btnChangeRegister.addEventListener('click', hideLogin);
+        registerSkip.addEventListener('click', hideRegister);
+        register.addEventListener('click', hideRegister);
+        registerContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+
+        // login 
+        const btnsLogin = document.querySelectorAll('.js-login');
+        const login = document.querySelector('.login');
+        const loginSkip = document.querySelector('.login__btn-skip');
+        const loginContainer = document.querySelector('.login__container');
+        const btnChangeLogin = document.querySelector('.register__tabs-item');
+
+        function showLogin() {
+            login.style.display = 'flex'
+        }
+
+        function hideLogin() {
+            login.style.display = 'none'
+        }
+
+        btnsLogin.forEach((btnLogin) => {
+            btnLogin.addEventListener('click', showLogin);
+        })
+
+        btnChangeLogin.addEventListener('click', showLogin);
+        btnChangeLogin.addEventListener('click', hideRegister);
+
+        loginSkip.addEventListener('click', hideLogin);
+        login.addEventListener('click', hideLogin);
+        loginContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+    </script>
+
+    <!-- Logged & registered  -->
+    <script>
+        // Register 
+        // validation form register and register user local storage
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const confirm_password = document.getElementById('confirm_password')
+        const Register_button = document.getElementById('js-btn-register');
+
+        // validation form register and register user local storage
+
+        Register_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (
+                email.value === "" ||
+                password.value === "" ||
+                confirm_password.value === ""
+            ) {
+                alert("vui lòng không để trống");
+            }
+            else if (confirm_password.value !== password.value) {
+                alert('Mật khẩu đăng ký và mật khẩu xác nhận không trùng khớp');
+            }
+            else {
+                // array user
+                const user = {
+                    email: email.value,
+                    password: password.value,
+                    confirm_password: confirm_password.value,
+                };
+                let json = JSON.stringify(user);
+                localStorage.setItem(email.value, json);
+                alert("Đăng Ký Thành Công");
+                window.location.href = "index.html";
+            }
+        });
+
+
+
+        // ---- Login ----
+        // validation form login
+        const email_login = document.getElementById('email_login');
+        const password_login = document.getElementById('password_login');
+        const Login_button = document.getElementById('js-btn-login');
+
+        // validation form login
+        Login_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (email_login.value === "" || password_login.value === "") {
+                alert("vui lòng không để trống");
+            } else {
+                const user = JSON.parse(localStorage.getItem(email_login.value));
+                if (user) {
+                    if (
+                        user.email === email_login.value &&
+                        user.password === password_login.value
+                    ) {
+                        alert("Bạn Đã Đăng Nhập Thành Công");
+                        window.location.href = "index.html";
+                    }
+                    else {
+                        alert("Tên hoặc mật khẩu không trùng khớp");
+                    }
+                } else {
+                    alert("Tài khoản không tồn tại");
+                }
+            }
+        });
+
+    </script>
+
+    <!-- Show and hide password   -->
+    <script>
+        const showPasswordBtn = document.getElementById('show-login');
+        const showPsConfirmBtn = document.getElementById('show-confirm')
+        const showPsRegisterBtn = document.getElementById('show-register')
+        const password_input = document.getElementById('password_login');
+        const password_Confirm = document.getElementById('confirm_password');
+        const password_Register = document.getElementById('password');
+
+        function showPasswordLogin() {
+            if (password_input.type === 'password') {
+                password_input.setAttribute('type', 'text');
+                showPasswordBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_input.setAttribute('type', 'password');
+                showPasswordBtn.innerText = 'Hiện';
+            }
+        }
+
+        function showPasswordRegister() {
+            if (password_Register.type === 'password') {
+                password_Register.setAttribute('type', 'text');
+                showPsRegisterBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_Register.setAttribute('type', 'password');
+                showPsRegisterBtn.innerText = 'Hiện';
+            }
+        }
+
+        function showPasswordConfirmRegister() {
+            if (password_Confirm.type === 'password') {
+                password_Confirm.setAttribute('type', 'text');
+                showPsConfirmBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_Confirm.setAttribute('type', 'password');
+                showPsConfirmBtn.innerText = 'Hiện';
+            }
+        }
+
+
+
+        showPasswordBtn.addEventListener('click', showPasswordLogin)
+        showPsRegisterBtn.addEventListener('click', showPasswordRegister)
+        showPsConfirmBtn.addEventListener('click', showPasswordConfirmRegister)
+
+    </script>
+
+    <!-- Lưu Sản phẩm vào local storage  -->
+    <script>
+        function addToCart() {
+            const quantity = parseInt(document.querySelector('.quantity-box__span--num').innerText);
+
+            const product = {
+                name: "Bách Khoa Thư Về Phát Triển Kỹ Năng - Tuổi Dậy Thì",
+                image: "./assets/images/images_FlashSales/FlashSale_Book9.jpg",
+                price: 201000,
+                old_price: 280000,
+                quantity: quantity
+            };
+
+            let cartData = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Kiểm tra xem sản phẩm đã có trong giỏ chưa
+            const existingProduct = cartData.find(p => p.name === product.name);
+            if (existingProduct) {
+                // Nếu có, thì tăng số lượng
+                existingProduct.quantity += quantity;
+            } else {
+                // Nếu không, thêm sản phẩm mới
+                cartData.push(product);
+            }
+
+            // Lưu lại vào LocalStorage
+            localStorage.setItem('cart', JSON.stringify(cartData));
+
+            alert("Sản phẩm đã được thêm vào giỏ hàng!");
+        }
+
+        function buyNow() {
+            // Giả sử thực hiện mua ngay
+            addToCart();  // Thêm vào giỏ hàng trước khi thanh toán
+            alert("Đã mua ngay sản phẩm!");
+            // Đưa người dùng sang trang giỏ hàng
+            window.location.href = "../../checkout-details.html";  // Đường dẫn đến trang giỏ hàng
+        }
+    </script>
+
+    <!-- show Menu mobile -->
+    <script>
+        let btnShowMenuMobile = document.querySelector('.header__icon-show-menu-mobile');
+        let menuMobile = document.querySelector('.navbar-mobile');
+
+        function showMenu() {
+            menuMobile.classList.toggle('show-menu-mobile');
+            let icon = document.querySelector('.header__icon-show-menu-mobile i')
+
+            if (menuMobile.classList.contains('show-menu-mobile')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
+            }
+        }
+
+        btnShowMenuMobile.addEventListener('click', showMenu);
+    </script>
+</body>
+
+
+
+</html>

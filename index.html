@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - NhatEbook.com</title>
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <header class="container-fluid header">
+
+            <!-- Header -->
+            <div class="container-lg" style="max-width: 123rem;">
+                <!-- Header logo  -->
+                <div class="logo">
+                    <a href="#" class="logo-name">
+                        Nhat<span>Ebook</span>
+                    </a>
+                </div>
+
+                <!-- Header search  -->
+                <div class="header__search hide-navbar-on-mobile">
+                    <input type="text" class="header__search-input"
+                        placeholder="Hội sách online - Tìm kiếm sách bạn muốn...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Header History  -->
+                    <div class="header__search-history">
+                        <p class="header__search-keyword-hot">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Truyện tranh hot
+                        </p>
+
+                        <div class="header__search-history-book">
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images/images_Header/Doraemon.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Túi thần kì của Doraemon
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images/images_Header/Naruto.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Naruto Shippuden
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images//images_Header/Dragon_Ball.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Dragon Ball 7 Viên Ngọc Rồng
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images/images_Header/One_Piece.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    One Piece Đảo Hải Tặc
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header navbar  -->
+                <ul class="header__navbar hide-navbar-on-mobile">
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link header__navbar-link--active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-quantity" style="cursor: pointer;">
+                        <a href="checkout-details.html" class="header__navbar-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#footer" class="header__navbar-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--acount" style="cursor: pointer;">
+                        <a class="header__navbar-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+
+                        <div class="account">
+                            <button class="account__btn btn--primary-color js-register">Đăng Ký</button>
+                            <button class="account__btn btn--border-color js-login">Đăng Nhập</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Icon is shows menu on mobile  -->
+                <div class="header__icon-show-menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Navbar mobile  -->
+            <div class="navbar-mobile">
+                <!-- Header navbar  -->
+                <ul class="header__navbar">
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-link header__navbar-link--active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-quantity" style="cursor: pointer;">
+                        <a href="checkout-details.html" class="header__navbar-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#footer" class="header__navbar-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--acount" style="cursor: pointer;">
+                        <a class="header__navbar-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+
+                        <div class="account">
+                            <button class="account__btn btn--primary-color js-register">Đăng Ký</button>
+                            <button class="account__btn btn--border-color js-login">Đăng Nhập</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Header search  -->
+                <div class="header__search">
+                    <input type="text" class="header__search-input"
+                        placeholder="Hội sách online - Tìm kiếm sách bạn muốn...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Header History  -->
+                    <div class="header__search-history">
+                        <p class="header__search-keyword-hot">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Truyện tranh hot
+                        </p>
+
+                        <div class="header__search-history-book">
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images/images_Header/Doraemon.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Túi thần kì của Doraemon
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images/images_Header/Naruto.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Naruto Shippuden
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images//images_Header/Dragon_Ball.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Dragon Ball 7 Viên Ngọc Rồng
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="./assets/images/images_Header/One_Piece.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    One Piece Đảo Hải Tặc
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Banner  -->
+        <div class="container-fluid wrapper">
+            <div class="container-lg" style="max-width: 123rem;">
+                <div class="row">
+                    <!-- Slide banner -->
+                    <div class="col-lg-9 slide">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/images_Slider/Slide1.png" class="d-block slide__img"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/images_Slider/Slide2.png" class="d-block slide__img"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/images_Slider/Slide3.jpg" class="d-block slide__img"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/images_Slider/Slide4.png" class="d-block slide__img"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev slide__btn-control" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <i class="fa-solid fa-angle-left slide__btn-icon"></i>
+                            </button>
+                            <button class="carousel-control-next slide__btn-control" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <i class="fa-solid fa-angle-right slide__btn-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Image banner  -->
+                    <div class="col-lg-3 banner">
+                        <img src="./assets/images/images_Slider/banner1.png" alt="" class="banner__img">
+                        <img src="./assets/images/images_Slider/banner2.png" alt="" class="banner__img">
+                    </div>
+                </div>
+
+                <img src="./assets/images/images_Slider/banner3.jpg" alt="" width="100%" style="
+                border-radius: 6px;" class="banner-pink">
+
+                <div class="banner-list">
+                    <div class="banner-item">
+                        <img src="./assets/images/images_Slider/UuDai1.jpg" alt="" width="100%">
+                    </div>
+                    <div class="banner-item">
+                        <img src="./assets/images/images_Slider/UuDai2.jpg" alt="" width="100%">
+                    </div>
+                    <div class="banner-item">
+                        <img src="./assets/images/images_Slider/UuDai3.jpg" alt="" width="100%">
+                    </div>
+                    <div class="banner-item">
+                        <img src="./assets/images/images_Slider/UuDai4.jpg" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flash Sale  -->
+        <div class="container-fluid"
+            style="background: url('./assets/images/images_bg/Background.jpg') top center / cover no-repeat;">
+            <div class="container-lg flash-sale" style="max-width: 123rem;">
+                <div class="flash-sale__heading">
+                    <h3 class="flash-sale__heading-text">
+                        FLA<i class="flash-sale__heading-icon fa-solid fa-bolt"></i>H SALE
+                    </h3>
+                    <div class="flash-sale__countdown">
+                        <span class="flash-sale__countdown-text">Kết thúc trong</span>
+                        <span class="flash-sale__countdown-number" id="hours"></span>
+                        <span style="font-size: 1.8rem;">:</span>
+                        <span class="flash-sale__countdown-number" id="minutes"></span>
+                        <span style="font-size: 1.8rem;">:</span>
+                        <span class="flash-sale__countdown-number" id="seconds"></span>
+                    </div>
+                </div>
+
+                <!-- Flash sale list   -->
+                <div class="flash-sale__book-list">
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/dan-ga-trong-san.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book2.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Đàn Gà Trong Sân
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    20.250 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-55%</span>
+                                <p class="flash-sale__book-price-old">45.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/dung-phi-hoai-tuoi-tre.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book1.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Đừng Phí Hoài Tuổi Trẻ
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    54.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-50%</span>
+                                <p class="flash-sale__book-price-old">108.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/doi-thoai-van-chuong.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book3.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Đối Thoại Văn Chương
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    108.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-40%</span>
+                                <p class="flash-sale__book-price-old">180.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/nghe-thuat-lanh-dao.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book4.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Nghệ Thuật Lãnh Đạo
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    117.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-40%</span>
+                                <p class="flash-sale__book-price-old">195.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/nhung-don-tam-ly-trong-thuyet-phuc.html"
+                            class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book5.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Những Đòn Tâm Lý Trong Thuyết Phục
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    118.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-35%</span>
+                                <p class="flash-sale__book-price-old">229.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/nghe-thuat-ke-chuyen-cho-tre-em.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book6.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Nghệ Thuật Kể Chuyện Cho Trẻ Em
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    73.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-30%</span>
+                                <p class="flash-sale__book-price-old">105.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/sang-tao.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book7.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Sáng Tạo - Phương Thức Làm Việc Và Sinh Tồn Trong Tương Lai
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    47.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-55%</span>
+                                <p class="flash-sale__book-price-old">105.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/tro-thanh.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book8.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Trở Thành Phiên Bản Tốt Hơn Của Chính Mình
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    59.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-35%</span>
+                                <p class="flash-sale__book-price-old">92.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/bach-khoa.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book9.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Bách Khoa Thư Về Phát Triển Kỹ Năng - Tuổi Dậy Thì
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    201.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-28%</span>
+                                <p class="flash-sale__book-price-old">280.000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flash-sale__book-item">
+                        <a href="assets/flash_sale/quan-ly.html" class="flash-sale__book-link">
+                            <img src="./assets/images/images_FlashSales/FlashSale_Book10.jpg" alt="" width="100%">
+                            <div class="flash-sale__book-item-content">
+                                <p class="flash-sale__book-name">
+                                    Quản Lí Quy Trình Và Con Người Để Thay Đổi Thành Công
+                                </p>
+                                <span class="flash-sale__book-price-current">
+                                    117.000 đ
+                                </span>
+                                <span class="flash-sale__book-discount">-35%</span>
+                                <p class="flash-sale__book-price-old">180.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content  -->
+        <div class="container-fluid wrapper-body">
+            <div class="container-lg" style="max-width: 123rem;">
+                <!-- Begin: Category  -->
+                <div class="content-wrapper">
+                    <h3 class="content-wrapper__title">
+                        <i class="fa-solid fa-list"></i>
+                        Danh mục sản phẩm
+                    </h3>
+                    <hr style="border-bottom: 0.1rem solid #F2F4F5;">
+
+                    <div class="content-category-list">
+                        <a href="./assets/categories_page/anh-van.html" class="content-category-item">
+                            <img src="./assets/images/images_Categories/Category_img2.jpg" alt="">
+                            <p class="content-category-item__name">Ngoại Văn</p>
+                        </a>
+                        <a href="./assets/categories_page/thieu-nhi.html" class="content-category-item">
+                            <img src="./assets/images/images_Categories/Category_img4.jpg" alt="">
+                            <p class="content-category-item__name">Thiếu Nhi</p>
+                        </a>
+                        <a href="./assets/categories_page/tam-ly.html" class="content-category-item">
+                            <img src="./assets/images/images_Categories/Category_img5.png" alt="">
+                            <p class="content-category-item__name">Tâm Lý Kỹ Năng</p>
+                        </a>
+                        <a href="./assets/categories_page/van-hoc.html" class="content-category-item">
+                            <img src="./assets/images/images_Categories/Category_img7.png" alt="">
+                            <p class="content-category-item__name">Văn Học</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- End: Category  -->
+
+                <!-- Begin: Tab slider  -->
+                <div class="tabslider">
+                    <!-- tabslider header  -->
+                    <div class="tabslider-header">
+                        <img class="tabslider-header__icon" src="./assets/images/images_Tab_Slider/Tab_Slider_Icon.png"
+                            alt="">
+                        <span class="tabslider-header__span">Xu Hướng Mua Sắm</span>
+                    </div>
+
+                    <!-- Tabs  -->
+                    <div class="tabslider-content">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Xu Hướng Theo Ngày</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Sách Hot - Giảm Sốc</button>
+                            </li>
+                        </ul>
+
+                        <hr style="margin: 0;">
+
+                        <!-- Content of tabs  -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- daily trend  -->
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <!-- Card product  -->
+                                <div class="card-list">
+                                    <div class="card-item">
+                                        <a href="./assets/product_trending/kheo-an-noi.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Trending1.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Khéo Ăn Nói Sẽ Có Được Thiên Hạ (Tái Bản 2022)
+                                            </p>
+                                            <span class="card-link__new-price">80.600 đ</span>
+                                            <span class="card-link__sale">-38%</span>
+                                            <span class="card-link__old-price">130.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 90%">
+                                                    <span class="progress-text">
+                                                        Sắp hết
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_trending/dune-movie.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Trending2.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Dune (Movie Tie-In)
+                                            </p>
+                                            <span class="card-link__new-price">217.550 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">229.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 20%">
+                                                    <span class="progress-text">
+                                                        Đã bán 31
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="card-link__desc">
+                                                Hàng mới về
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_trending/montessori.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Trending3.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Montessori - Phương Pháp Giáo Dục Toàn Diện Cho Trẻ 0-6 Tuổi
+                                            </p>
+                                            <span class="card-link__new-price">86.870 đ</span>
+                                            <span class="card-link__sale">-27%</span>
+                                            <span class="card-link__old-price">119.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 10%">
+                                                    <span class="progress-text">
+                                                        Đã bán 22
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="card-link__desc">
+                                                Hàng mới về
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_trending/combo-sach.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Trending4.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Combo Sách [Manga] Dược Sư Tự Sự - Tập 1 - 11 (Bộ 11 Tập)
+                                            </p>
+                                            <span class="card-link__new-price">466.593 đ</span>
+                                            <span class="card-link__sale">-9%</span>
+                                            <span class="card-link__old-price">470.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 30%">
+                                                    <span class="progress-text">
+                                                        Đã bán 42
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_trending/sach-tam-the.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Trending5.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Combo Sách Tam Thể - Tập 1 + 2 + 3 (Bộ 3 Cuốn)
+                                            </p>
+                                            <span class="card-link__new-price">492.765 đ</span>
+                                            <span class="card-link__sale">-25%</span>
+                                            <span class="card-link__old-price">665.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 75%">
+                                                    <span class="progress-text">
+                                                        Đã bán 102
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="card-link__desc">
+                                                Hàng mới về
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hot - sales -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <!-- Card product  -->
+                                <div class="card-list">
+                                    <div class="card-item">
+                                        <a href="./assets/product_hot/phi-ly-tri.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Hot_Sale1.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Phi Lý Trí (Tái Bản)
+                                            </p>
+                                            <span class="card-link__new-price">109.850 đ</span>
+                                            <span class="card-link__sale">-35%</span>
+                                            <span class="card-link__old-price">169.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 30%">
+                                                    <span class="progress-text">
+                                                        Đã bán 40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_hot/hai-huoc.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Hot_Sale2.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Hài Hước Một Chút Thế Giới Sẽ Khác Đi (Tái Bản 2021)
+                                            </p>
+                                            <span class="card-link__new-price">48.000 đ</span>
+                                            <span class="card-link__sale">-40%</span>
+                                            <span class="card-link__old-price">80.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 95%">
+                                                    <span class="progress-text">
+                                                        Sắp hết
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_hot/truyen-co-tich.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Hot_Sale3.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Truyện Cổ Tích Thế Giới Song Ngữ Hay Nhất
+                                            </p>
+                                            <span class="card-link__new-price">58.500 đ</span>
+                                            <span class="card-link__sale">-35%</span>
+                                            <span class="card-link__old-price">90.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 60%">
+                                                    <span class="progress-text">
+                                                        Đã bán 69
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_hot/chinh-sach-tien.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Hot_Sale4.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Chính Sách Tiền Tệ Thế Kỷ 21
+                                            </p>
+                                            <span class="card-link__new-price">211.250 đ</span>
+                                            <span class="card-link__sale">-35%</span>
+                                            <span class="card-link__old-price">325.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 5%">
+                                                    <span class="progress-text">
+                                                        Đã bán 10
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_hot/cam-nang-con-gai.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Tab_Slider/Hot_Sale5.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Cẩm Nang Tuổi Dậy Thì Dành Cho Bạn Gái (Tái Bản 2023)
+                                            </p>
+                                            <span class="card-link__new-price">60.000 đ</span>
+                                            <span class="card-link__sale">-40%</span>
+                                            <span class="card-link__old-price">100.000 đ</span>
+                                            <div class="progress" role="progressbar" aria-label="Example with label"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 25%">
+                                                    <span class="progress-text">
+                                                        Đã bán 30
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="card-link__desc">
+                                                Hàng mới về
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Tab slider  -->
+
+                <!-- Begin: manga  -->
+                <div class="manga">
+                    <div class="manga-header">
+                        <img src="./assets/images/images_Manga/icon.png" alt="" class="manga-header__img">
+                        <span class="manga-header__span">
+                            Manga Nổi Bật
+                        </span>
+                    </div>
+                    <hr>
+                    <!-- Carousel  -->
+                    <div id="carousel-brand" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Carousel item 1 -->
+                            <div class="carousel-item active">
+                                <!-- Card product  -->
+                                <div class="card-list">
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/doraemon-thien-the.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga1.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Doraemon Học Tập - Thiên Thể (Tái Bản 2024)
+                                            </p>
+                                            <span class="card-link__new-price">42.750 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">45.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/doraemon-cong-tru.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga2.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Doraemon Học Tập - Cộng Trừ (Tái Bản 2024)
+                                            </p>
+                                            <span class="card-link__new-price">42.750 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">45.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/doraemon-nhan-chia.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga3.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Doraemon Học Tập - Nhân Chia (Tái Bản 2024)
+                                            </p>
+                                            <span class="card-link__new-price">42.750 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">45.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/doraemon-hinh-khoi.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga4.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Doraemon Học Tập - Hình Khối (Tái Bản 2024)
+                                            </p>
+                                            <span class="card-link__new-price">42.750 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">45.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/doraemon-dien-tich.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga5.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Doraemon Học Tập - Diện Tích-Thể Tích (Tái Bản 2024)
+                                            </p>
+                                            <span class="card-link__new-price">42.750 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">45.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel item 2 -->
+                            <div class="carousel-item">
+                                <!-- Card product  -->
+                                <div class="card-list">
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/conan-tap-6.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga6.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Thám Tử Lừng Danh Conan - Hanzawa Chàng Hung Thủ Số Nhọ - Tập 6
+                                            </p>
+                                            <span class="card-link__new-price">23.750 đ</span>
+                                            <span class="card-link__sale">-5%</span>
+                                            <span class="card-link__old-price">25.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/ninja-rantaro.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga7.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Ninja Rantaro - Tập 25 (Tái Bản 2024)
+                                            </p>
+                                            <span class="card-link__new-price">38.000 đ</span>
+                                            <span class="card-link__sale">-2%</span>
+                                            <span class="card-link__old-price">40.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/dragon-ball.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga8.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Dragon Ball Super - Tập 20: Lao Tâm Khổ Chiến - Tặng Kèm Postcard
+                                            </p>
+                                            <span class="card-link__new-price">23.750 đ</span>
+                                            <span class="card-link__sale">-2%</span>
+                                            <span class="card-link__old-price">25.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/attack-on-titan.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga9.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Attack On Titan - Tập 4
+                                            </p>
+                                            <span class="card-link__new-price">45.600 đ</span>
+                                            <span class="card-link__sale">-3%</span>
+                                            <span class="card-link__old-price">48.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="card-item">
+                                        <a href="./assets/product_manga/vuong-quoc.html" class="card-link">
+                                            <div class="card-link__wp-img">
+                                                <img src="./assets/images/images_Manga/manga10.jpg" alt=""
+                                                    class="card-link__img">
+                                            </div>
+                                            <p class="card-link__name">
+                                                Vương Quốc Trời Xanh Ariadne - Ariadne In The Blue Sky - Tập 14
+                                            </p>
+                                            <span class="card-link__new-price">33.250 đ</span>
+                                            <span class="card-link__sale">-3%</span>
+                                            <span class="card-link__old-price">35.000 đ</span>
+                                            <span class="card-link__desc">
+                                                Sắp có hàng
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-slider-control btn-slider-control--left carousel-control-prev" type="button"
+                            data-bs-target="#carousel-brand" data-bs-slide="prev">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="btn-slider-control btn-slider-control--right carousel-control-next" type="button"
+                            data-bs-target="#carousel-brand" data-bs-slide="next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- End: manga  -->
+
+                <!-- Begin: Footer  -->
+                <div class="row footer" id="footer">
+                    <!-- Footer column Left  -->
+                    <div class="col-lg-4 col-md-4 col-12 footer__logo">
+                        <p class="logo-name" style="font-size: 5rem; margin: 0;">
+                            Nhat<span style="font-size: 3.6rem;">Ebook</span>
+                        </p>
+                        <p class="footer__logo-text">
+                            NhatEbook Nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận
+                            hàng
+                            trực tiếp tại văn phòng cũng như tất cả hệ thống trên toàn quốc.
+                        </p>
+                        <div class="footer__social-media">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer column Right  -->
+                    <div class="col-lg-8 col-md-8 col-12 footer__info">
+                        <div class="row">
+                            <!-- Begin: Service  -->
+                            <div class="col-lg-4 col-md-6 col-12 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    DỊCH VỤ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/dieu-khoan-su-dung.html"
+                                            class="footer__info-link">Điều khoản sử dụng</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/chinh-sach-bao-mat.html"
+                                            class="footer__info-link">
+                                            Chính sách bảo mật thông tin cá nhân
+                                        </a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/bao-mat-pay.html" class="footer__info-link">
+                                            Chính sách bảo mật thanh toán
+                                        </a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/gioi-thieu-NhatEbook.html"
+                                            class="footer__info-link">Giới thiệu NhatEbook</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Service  -->
+
+                            <!-- Begin: Support -->
+                            <div class="col-lg-4 col-md-6 col-12 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    HỖ TRỢ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/doi-tra-hoan-tien.html"
+                                            class="footer__info-link">
+                                            Chính sách đổi - trả - hoàn tiền
+                                        </a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/chinh-sach-bao-hanh.html"
+                                            class="footer__info-link">Chính sách bảo hành - bồi hoàn</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/van-chuyen.html" class="footer__info-link">
+                                            Chính sách vận chuyển</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="./assets/footer-pages/tutorial-pay.html"
+                                            class="footer__info-link">Phương thức thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Support -->
+
+                            <!-- Begin: Contact  -->
+                            <div class="col-lg-4 col-md-6 col-12 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    LIÊN HỆ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            TP. Hồ Chí Minh
+                                        </span>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            nhatebook@gmail.com
+                                        </span>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-phone"></i>
+                                            123456789
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Contact  -->
+                        </div>
+                    </div>
+
+                    <!-- Footer Pay   -->
+                    <div class="row text-center">
+                        <div class="row mt-5">
+                            <div class="col-lg-3 col-md-3 col-6 mb-4">
+                                <img src="./assets/images/images_footer/IMG_Pay1.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay2.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay3.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay4.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay5.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay6.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay7.png" alt="" width="26%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="./assets/images/images_footer/IMG_Pay8.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer copyright  -->
+                    <div class="footer__copyright">
+                        <p>&copy; 2024 Tăng Minh Nhật, Inc. All rights reserved</p>
+                    </div>
+                </div>
+                <!-- End: Footer  -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal register  -->
+    <div class="register">
+        <div class="register__container">
+            <div class="register__tabs">
+                <div class="register__tabs-item">
+                    Đăng nhập
+                </div>
+                <div class="register__tabs-item register__tabs-item-active">
+                    Đăng ký
+                </div>
+            </div>
+
+            <div class="register__input-box">
+                <form action="">
+                    <div class="register__phone">
+                        <label for="email" class="register__phone-label">Tên người dùng</label>
+                        <input id="email" class="register__phone-input" type="email" placeholder="Nhập họ tên">
+                    </div>
+
+                    <div class="register__password">
+                        <label for="password" class="register__password-label">Mật khẩu</label>
+                        <input id="password" class="register__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="register__password-span show-hide" id="show-register">Hiện</span>
+                    </div>
+
+                    <div class="register__password">
+                        <label for="confirm_password" class="register__password-label">Xác nhận Mật khẩu</label>
+                        <input id="confirm_password" class="register__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="register__password-span show-hide" id="show-confirm">Hiện</span>
+                    </div>
+
+                    <div class="register__btn-box">
+                        <button type="button" class="register__btn-register" id="js-btn-register">Đăng ký</button>
+                        <button type="button" class="register__btn-skip">Bỏ qua</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="register__term">
+                <p>Bằng việc đăng ký, bạn đã đồng ý với NhatEbook về</p>
+                <p>
+                    <a href="./assets/footer-pages/dieu-khoan-su-dung.html">Điều khoản dịch vụ</a> &
+                    <a href="./assets/footer-pages/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal login  -->
+    <div class="login">
+        <div class="login__container">
+            <div class="login__tabs">
+                <div class="login__tabs-item register__tabs-item-active">
+                    Đăng nhập
+                </div>
+                <div class="login__tabs-item login__tabs-item--change-to-register">
+                    Đăng ký
+                </div>
+            </div>
+
+            <div class="login__input-box">
+                <form action="">
+                    <div class="login__phone">
+                        <label for="email_login" class="login__phone-label">Tên người dùng</label>
+                        <input id="email_login" class="login__phone-input" type="email"
+                            placeholder="Nhập tên bạn đăng ký">
+                    </div>
+
+                    <div class="login__password">
+                        <label for="password_login" class="login__password-label">Mật khẩu</label>
+                        <input id="password_login" class="login__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="login__password-span show-hide" id="show-login">Hiện</span>
+                    </div>
+
+                    <div class="login__btn-box">
+                        <button type="button" class="login__btn-login" id="js-btn-login">Đăng nhập</button>
+                        <button type="button" class="login__btn-skip">Bỏ qua</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open and Close Login & Register  -->
+    <script>
+        // register 
+        const btnsRegister = document.querySelectorAll('.js-register');
+        const register = document.querySelector('.register');
+        const registerSkip = document.querySelector('.register__btn-skip');
+        const registerContainer = document.querySelector('.register__container');
+        const btnChangeRegister = document.querySelector('.login__tabs-item--change-to-register');
+
+
+        function showRegister() {
+            register.style.display = 'flex'
+        }
+
+        function hideRegister() {
+            register.style.display = 'none'
+        }
+
+        btnsRegister.forEach((btnRegister) => {
+            btnRegister.addEventListener('click', showRegister);
+        })
+        btnChangeRegister.addEventListener('click', showRegister);
+        btnChangeRegister.addEventListener('click', hideLogin);
+        registerSkip.addEventListener('click', hideRegister);
+        register.addEventListener('click', hideRegister);
+        registerContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+
+        // login 
+        const btnsLogin = document.querySelectorAll('.js-login');
+        const login = document.querySelector('.login');
+        const loginSkip = document.querySelector('.login__btn-skip');
+        const loginContainer = document.querySelector('.login__container');
+        const btnChangeLogin = document.querySelector('.register__tabs-item');
+
+        function showLogin() {
+            login.style.display = 'flex'
+        }
+
+        function hideLogin() {
+            login.style.display = 'none'
+        }
+
+        btnsLogin.forEach((btnLogin) => {
+            btnLogin.addEventListener('click', showLogin);
+        })
+
+        btnChangeLogin.addEventListener('click', showLogin);
+        btnChangeLogin.addEventListener('click', hideRegister);
+
+        loginSkip.addEventListener('click', hideLogin);
+        login.addEventListener('click', hideLogin);
+        loginContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+    </script>
+
+    <!-- Logged & registered  -->
+    <script>
+        // Register 
+        // validation form register and register user local storage
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const confirm_password = document.getElementById('confirm_password')
+        const Register_button = document.getElementById('js-btn-register');
+
+        // validation form register and register user local storage
+
+        Register_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (
+                email.value === "" ||
+                password.value === "" ||
+                confirm_password.value === ""
+            ) {
+                alert("vui lòng không để trống");
+            }
+            else if (confirm_password.value !== password.value) {
+                alert('Mật khẩu đăng ký và mật khẩu xác nhận không trùng khớp');
+            }
+            else {
+                // array user
+                const user = {
+                    email: email.value,
+                    password: password.value,
+                    confirm_password: confirm_password.value,
+                };
+                let json = JSON.stringify(user);
+                localStorage.setItem(email.value, json);
+                alert("Đăng Ký Thành Công");
+                window.location.href = "index.html";
+            }
+        });
+
+
+
+        // ---- Login ----
+        // validation form login
+        const email_login = document.getElementById('email_login');
+        const password_login = document.getElementById('password_login');
+        const Login_button = document.getElementById('js-btn-login');
+
+        // validation form login
+        Login_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (email_login.value === "" || password_login.value === "") {
+                alert("vui lòng không để trống");
+            } else {
+                const user = JSON.parse(localStorage.getItem(email_login.value));
+                if (user) {
+                    if (
+                        user.email === email_login.value &&
+                        user.password === password_login.value
+                    ) {
+                        alert("Bạn Đã Đăng Nhập Thành Công");
+                        window.location.href = "index.html";
+                    }
+                    else {
+                        alert("Tên hoặc mật khẩu không trùng khớp");
+                    }
+                } else {
+                    alert("Tài khoản không tồn tại");
+                }
+            }
+        });
+
+    </script>
+
+    <script src="./assets/js/countDown.js"></script>
+
+    <!-- Show and hide password   -->
+    <script>
+        const showPasswordBtn = document.getElementById('show-login');
+        const showPsConfirmBtn = document.getElementById('show-confirm')
+        const showPsRegisterBtn = document.getElementById('show-register')
+        const password_input = document.getElementById('password_login');
+        const password_Confirm = document.getElementById('confirm_password');
+        const password_Register = document.getElementById('password');
+
+        function showPasswordLogin() {
+            if (password_input.type === 'password') {
+                password_input.setAttribute('type', 'text');
+                showPasswordBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_input.setAttribute('type', 'password');
+                showPasswordBtn.innerText = 'Hiện';
+            }
+        }
+
+        function showPasswordRegister() {
+            if (password_Register.type === 'password') {
+                password_Register.setAttribute('type', 'text');
+                showPsRegisterBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_Register.setAttribute('type', 'password');
+                showPsRegisterBtn.innerText = 'Hiện';
+            }
+        }
+
+        function showPasswordConfirmRegister() {
+            if (password_Confirm.type === 'password') {
+                password_Confirm.setAttribute('type', 'text');
+                showPsConfirmBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_Confirm.setAttribute('type', 'password');
+                showPsConfirmBtn.innerText = 'Hiện';
+            }
+        }
+
+
+
+        showPasswordBtn.addEventListener('click', showPasswordLogin)
+        showPsRegisterBtn.addEventListener('click', showPasswordRegister)
+        showPsConfirmBtn.addEventListener('click', showPasswordConfirmRegister)
+
+    </script>
+
+    <!-- show Menu mobile -->
+    <script>
+        let btnShowMenuMobile = document.querySelector('.header__icon-show-menu-mobile');
+        let menuMobile = document.querySelector('.navbar-mobile');
+
+        function showMenu() {
+            menuMobile.classList.toggle('show-menu-mobile');
+            let icon = document.querySelector('.header__icon-show-menu-mobile i')
+
+            if (menuMobile.classList.contains('show-menu-mobile')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
+            }
+        }
+
+        btnShowMenuMobile.addEventListener('click', showMenu);
+
+        window.onscroll = () => {
+            if (menuMobile.classList.contains('show-menu-mobile')) {
+                menuMobile.classList.remove('show-menu-mobile');
+                let icon = document.querySelector('.header__icon-show-menu-mobile i');
+                icon.className = 'fa-solid fa-bars';
+            }
+        };
+    </script>
+</body>
+
+</html>

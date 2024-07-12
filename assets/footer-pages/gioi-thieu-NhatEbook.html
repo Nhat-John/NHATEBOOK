@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Nhà Sách NhatEbook - NhatEbook.com</title>
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/base.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="back-top">
+    <div class="main">
+        <header class="container-fluid header">
+
+            <!-- Header -->
+            <div class="container-lg" style="max-width: 123rem;">
+                <!-- Header logo  -->
+                <div class="logo">
+                    <a href="#" class="logo-name">
+                        Nhat<span>Ebook</span>
+                    </a>
+                </div>
+
+                <!-- Header search  -->
+                <div class="header__search hide-navbar-on-mobile">
+                    <input type="text" class="header__search-input"
+                        placeholder="Hội sách online - Tìm kiếm sách bạn muốn...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Header History  -->
+                    <div class="header__search-history">
+                        <p class="header__search-keyword-hot">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Truyện tranh hot
+                        </p>
+
+                        <div class="header__search-history-book">
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Doraemon.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Túi thần kì của Doraemon
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Naruto.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Naruto Shippuden
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images//images_Header/Dragon_Ball.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Dragon Ball 7 Viên Ngọc Rồng
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/One_Piece.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    One Piece Đảo Hải Tặc
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header navbar  -->
+                <ul class="header__navbar hide-navbar-on-mobile">
+                    <li class="header__navbar-item">
+                        <a href="../../index.html" class="header__navbar-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-quantity" style="cursor: pointer;">
+                        <a href="../../checkout-details.html" class="header__navbar-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#footer" class="header__navbar-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--acount" style="cursor: pointer;">
+                        <a class="header__navbar-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+
+                        <div class="account">
+                            <button class="account__btn btn--primary-color js-register">Đăng Ký</button>
+                            <button class="account__btn btn--border-color js-login">Đăng Nhập</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Icon is shows menu on mobile  -->
+                <div class="header__icon-show-menu-mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Navbar mobile  -->
+            <div class="navbar-mobile">
+                <!-- Header navbar  -->
+                <ul class="header__navbar">
+                    <li class="header__navbar-item">
+                        <a href="../../index.html" class="header__navbar-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--has-quantity" style="cursor: pointer;">
+                        <a href="../../checkout-details.html" class="header__navbar-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#footer" class="header__navbar-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--acount" style="cursor: pointer;">
+                        <a class="header__navbar-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a>
+
+                        <div class="account">
+                            <button class="account__btn btn--primary-color js-register">Đăng Ký</button>
+                            <button class="account__btn btn--border-color js-login">Đăng Nhập</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Header search  -->
+                <div class="header__search">
+                    <input type="text" class="header__search-input"
+                        placeholder="Hội sách online - Tìm kiếm sách bạn muốn...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <!-- Header History  -->
+                    <div class="header__search-history">
+                        <p class="header__search-keyword-hot">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Truyện tranh hot
+                        </p>
+
+                        <div class="header__search-history-book">
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Doraemon.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Túi thần kì của Doraemon
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/Naruto.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Naruto Shippuden
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images//images_Header/Dragon_Ball.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    Dragon Ball 7 Viên Ngọc Rồng
+                                </p>
+                            </a>
+                            <a href="#" class="header__search-history-book-item">
+                                <img src="../images/images_Header/One_Piece.jpg" alt="" width="80%"
+                                    class="header__search-history-book-img">
+                                <p class="header__search-history-book-name">
+                                    One Piece Đảo Hải Tặc
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+        <div class="container-fluid wrapper-body px-0">
+            <!-- Header Panigation  -->
+            <div class="container-lg" style="max-width: 123rem; margin-top: 50px;">
+                <div class="header-pagination">
+                    <a href="../../index.html" class="header-pagination__home-page">TRANG CHỦ</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#" class="header-pagination__van-hoc-page">Giới Thiệu Nhà Sách NhatEbook</a>
+                </div>
+
+                <!-- content  -->
+                <div class="main-container">
+                    <h1 class="main-container__heading"></h1>
+                    <p class="main-container__text mb-0" style="font-size: 2rem;">
+                        GIỚI THIỆU NHATEBOOK
+                    </p>
+                    <p class="main-container__text">
+                        THÔNG TIN GIỚI THIỆU CÔNG TY NHATEBOOK
+                    </p>
+
+                    <h5 class="main-container__sub-heading">Nguồn nhân lực</h5>
+                    <p class="main-container__text">
+                        Để xây dựng Thương hiệu mạnh, một trong những định hướng quan trọng hàng đầu của NhatEbook là
+                        chiến
+                        lược phát triển nguồn nhân lực - mấu chốt của mọi sự thành công.
+                    </p>
+                    <p class="main-container__text">
+                        NhatEbook có hơn 1000 CB-CNV, trình độ chuyên môn giỏi, nhiệt tình, năng động, chuyên nghiệp.
+                        Lực
+                        lượng quản lý NhatEbook có thâm niên công tác, giỏi nghiệp vụ nhiều kinh nghiệm, có khả năng
+                        quản
+                        lý tốt và điều hành đơn vị hoạt động hiệu quả.
+                    </p>
+                    <p class="main-container__text">
+                        Kết hợp tuyển dụng nguồn nhân lực đầu vào có chất lượng và kế hoạch bồi dưỡng kiến thức, rèn
+                        luyện bổ sung các kỹ năng và chuẩn bị đội ngũ kế thừa theo hướng chính qui thông qua các lớp học
+                        ngắn hạn, dài hạn; các lớp bồi dưỡng CB-CNV được tổ chức trong nước cũng như ở nước ngoài đều
+                        được lãnh đạo NhatEbook đặc biệt quan tâm và tạo điều kiện triển khai thực hiện. Chính vì thế,
+                        trình độ chuyên môn của đội ngũ CB-CNV ngày càng được nâng cao, đáp ứng nhu cầu ngày càng tăng
+                        của công việc cũng như sự phát triển của xã hội đang trên đường hội nhập.
+                    </p>
+                    <h5 class="main-container__sub-heading">Về hàng hóa</h5>
+                    <p class="main-container__text">
+                        Công ty NhatEbook chuyên kinh doanh: sách quốc văn, ngoại văn, văn hóa phẩm, văn phòng phẩm,
+                        dụng
+                        cụ học tập, quà lưu niệm, đồ chơi dành cho trẻ em… Một số Nhà sách trực thuộc Công ty NhatEbook
+                        còn
+                        kinh doanh các mặt hàng siêu thị như: hàng tiêu dùng, hàng gia dụng, hóa mỹ phẩm…
+                    </p>
+                    <p class="main-container__text">
+                        Sách quốc văn với nhiều thể loại đa dạng như sách giáo khoa - tham khảo, giáo trình, sách học
+                        ngữ, từ điển, sách tham khảo thuộc nhiều chuyên ngành phong phú: văn học, tâm lý - giáo dục,
+                        khoa học kỹ thuật, khoa học kinh tế - xã hội, khoa học thường thức, sách phong thủy, nghệ thuật
+                        sống, danh ngôn, sách thiếu nhi, truyện tranh, truyện đọc, từ điển, công nghệ thông tin, khoa
+                        học - kỹ thuật, nấu ăn, làm đẹp... của nhiều Nhà xuất bản, nhà cung cấp sách có uy tín như: NXB
+                        Trẻ, Giáo Dục, Kim Đồng, Văn hóa -Văn Nghệ, Tổng hợp TP.HCM, Chính Trị Quốc Gia; Công ty Đông A,
+                        Nhã Nam, Bách Việt, Alphabook, Thái Hà, Minh Lâm, Đinh Tị, Minh Long, TGM, Sáng Tạo Trí Việt,
+                        Khang Việt, Toàn Phúc…
+                    </p>
+                    <h5 class="main-container__sub-heading">Kinh nghiệm hoạt động</h5>
+                    <p class="main-container__text">
+                        NhatEbook đã tích lũy được nhiều kinh nghiệm trong việc nghiên cứu thị trường, phân tích tài
+                        chính,
+                        định hướng phát triển, hoạch định chiến lược kinh doanh và khả năng tiếp thị giỏi… Đồng thời
+                        NhatEbook còn có nhiều kinh nghiệm trong việc tổ chức các cuộc Hội thảo, Triển lãm và giới thiệu
+                        sách quốc văn, ngoại văn với qui mô lớn, ấn tượng.
+                    </p>
+                    <p class="main-container__text">
+                        NhatEbook luôn là đơn vị đi tiên phong trong nhiều hoạt động xã hội, điển hình là việc tham gia
+                        tổ
+                        chức các Hội sách ở TP.HCM như: Hội sách Thành Phố Hồ Chí Minh, Hội sách Thiếu nhi ngoại thành,
+                        Hội sách Mùa khai trường, Hội sách Học đường, Hội sách Trường Quốc tế… Nổi bật nhất là Hội sách
+                        Thành Phố Hồ Chí Minh, được định kỳ tổ chức 2 năm một lần. Đây là Hội sách có qui mô lớn, tầm
+                        ảnh hưởng rộng, đã để lại ý nghĩa kinh tế, văn hóa và xã hội sâu sắc. Hội sách không chỉ là nơi
+                        hội tụ văn hóa lý tưởng đối với người dân TP.HCM mà còn là một thông điệp văn hóa tôn vinh cho
+                        các hoạt động Xuất bản - Phát hành sách cả nước, nâng tầm cho việc giao lưu, trao đổi văn hóa
+                        với bạn bè thế giới, đồng thời góp phần đem sách - tri thức đến gần hơn với mọi tầng lớp nhân
+                        dân, phục vụ tốt hơn nhu cầu văn hóa tinh thần của xã hội
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin: Footer  -->
+        <div class="container-fluid wrapper-body pt-1">
+            <div class="container-lg" style="max-width: 123rem;">
+                <div class="row footer" id="footer" style="margin-top: 2.6rem;">
+                    <!-- Footer column Left  -->
+                    <div class="col-lg-4 col-md-4 col-12 footer__logo">
+                        <p class="logo-name" style="font-size: 5rem; margin: 0;">
+                            Nhat<span style="font-size: 3.6rem;">Ebook</span>
+                        </p>
+                        <p class="footer__logo-text">
+                            NhatEbook Nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận
+                            hàng
+                            trực tiếp tại văn phòng cũng như tất cả hệ thống trên toàn quốc.
+                        </p>
+                        <div class="footer__social-media">
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="footer__social-media-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer column Right  -->
+                    <div class="col-lg-8 col-md-8 col-12 footer__info">
+                        <div class="row">
+                            <!-- Begin: Service  -->
+                            <div class="col-lg-4 col-md-6 col-12 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    DỊCH VỤ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/dieu-khoan-su-dung.html"
+                                            class="footer__info-link">Điều khoản sử dụng</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/chinh-sach-bao-mat.html"
+                                            class="footer__info-link">Chính sách bảo mật thông tin cá
+                                            nhân</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/chinh-sach-bao-mat.html"
+                                            class="footer__info-link">Chính sách bảo mật thanh toán</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="#" class="footer__info-link">Giới thiệu NhatEbook</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Service  -->
+
+                            <!-- Begin: Support -->
+                            <div class="col-lg-4 col-md-6 col-12 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    HỖ TRỢ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/doi-tra-hoan-tien.html"
+                                            class="footer__info-link">Chính sách đổi - trả - hoàn tiền</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/chinh-sach-bao-hanh.html"
+                                            class="footer__info-link">Chính sách bảo hành - bồi hoàn</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/van-chuyen.html"
+                                            class="footer__info-link">Chính sách vận chuyển</a>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <a href="../../assets/footer-pages/tutorial-pay.html"
+                                            class="footer__info-link">Phương thức thanh toán</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Support -->
+
+                            <!-- Begin: Contact  -->
+                            <div class="col-lg-4 col-md-6 col-12 footer__info-col footer__info-col--1">
+                                <h3 class="footer__info-title">
+                                    LIÊN HỆ
+                                </h3>
+
+                                <ul class="footer__info-list">
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            TP. Hồ Chí Minh
+                                        </span>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            nhatebook@gmail.com
+                                        </span>
+                                    </li>
+                                    <li class="footer__info-item">
+                                        <span class="footer__info-link footer__info-link--no-hover ">
+                                            <i class="fa-solid fa-phone"></i>
+                                            123456789
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End: Contact  -->
+                        </div>
+                    </div>
+
+                    <!-- Footer Pay   -->
+                    <div class="row text-center">
+                        <div class="row mt-5">
+                            <div class="col-lg-3 col-md-3 col-6 mb-4">
+                                <img src="../images/images_footer/IMG_Pay1.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay2.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay3.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay4.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay5.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay6.png" alt="" width="50%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay7.png" alt="" width="26%">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6 mb-3">
+                                <img src="../images/images_footer/IMG_Pay8.png" alt="" width="50%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer copyright  -->
+                    <div class="footer__copyright">
+                        <p>&copy; 2024 Tăng Minh Nhật, Inc. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Footer  -->
+    </div>
+
+
+    <!-- Modal register  -->
+    <div class="register">
+        <div class="register__container">
+            <div class="register__tabs">
+                <div class="register__tabs-item">
+                    Đăng nhập
+                </div>
+                <div class="register__tabs-item register__tabs-item-active">
+                    Đăng ký
+                </div>
+            </div>
+
+            <div class="register__input-box">
+                <form action="">
+                    <div class="register__phone">
+                        <label for="email" class="register__phone-label">Tên người dùng</label>
+                        <input id="email" class="register__phone-input" type="email" placeholder="Nhập họ tên">
+                    </div>
+
+                    <div class="register__password">
+                        <label for="password" class="register__password-label">Mật khẩu</label>
+                        <input id="password" class="register__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="register__password-span show-hide" id="show-register">Hiện</span>
+                    </div>
+
+                    <div class="register__password">
+                        <label for="confirm_password" class="register__password-label">Xác nhận Mật khẩu</label>
+                        <input id="confirm_password" class="register__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="register__password-span show-hide" id="show-confirm">Hiện</span>
+                    </div>
+
+                    <div class="register__btn-box">
+                        <button type="button" class="register__btn-register" id="js-btn-register">Đăng ký</button>
+                        <button type="button" class="register__btn-skip">Bỏ qua</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="register__term">
+                <p>Bằng việc đăng ký, bạn đã đồng ý với NhatEbook về</p>
+                <p>
+                    <a href="../footer-pages/dieu-khoan-su-dung.html">Điều khoản dịch vụ</a> &
+                    <a href="../footer-pages/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal login  -->
+    <div class="login">
+        <div class="login__container">
+            <div class="login__tabs">
+                <div class="login__tabs-item register__tabs-item-active">
+                    Đăng nhập
+                </div>
+                <div class="login__tabs-item login__tabs-item--change-to-register">
+                    Đăng ký
+                </div>
+            </div>
+
+            <div class="login__input-box">
+                <form action="">
+                    <div class="login__phone">
+                        <label for="email_login" class="login__phone-label">Tên người dùng</label>
+                        <input id="email_login" class="login__phone-input" type="email"
+                            placeholder="Nhập tên bạn đăng ký">
+                    </div>
+
+                    <div class="login__password">
+                        <label for="password_login" class="login__password-label">Mật khẩu</label>
+                        <input id="password_login" class="login__password-input password" type="password"
+                            placeholder="Nhập mật khẩu">
+                        <span class="login__password-span show-hide" id="show-login">Hiện</span>
+                    </div>
+
+                    <div class="login__btn-box">
+                        <button type="button" class="login__btn-login" id="js-btn-login">Đăng nhập</button>
+                        <button type="button" class="login__btn-skip">Bỏ qua</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open and Close Login & Register  -->
+    <script>
+        // register 
+        const btnsRegister = document.querySelectorAll('.js-register');
+        const register = document.querySelector('.register');
+        const registerSkip = document.querySelector('.register__btn-skip');
+        const registerContainer = document.querySelector('.register__container');
+        const btnChangeRegister = document.querySelector('.login__tabs-item--change-to-register');
+
+
+        function showRegister() {
+            register.style.display = 'flex'
+        }
+
+        function hideRegister() {
+            register.style.display = 'none'
+        }
+
+        btnsRegister.forEach((btnRegister) => {
+            btnRegister.addEventListener('click', showRegister);
+        })
+        btnChangeRegister.addEventListener('click', showRegister);
+        btnChangeRegister.addEventListener('click', hideLogin);
+        registerSkip.addEventListener('click', hideRegister);
+        register.addEventListener('click', hideRegister);
+        registerContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+
+        // login 
+        const btnsLogin = document.querySelectorAll('.js-login');
+        const login = document.querySelector('.login');
+        const loginSkip = document.querySelector('.login__btn-skip');
+        const loginContainer = document.querySelector('.login__container');
+        const btnChangeLogin = document.querySelector('.register__tabs-item');
+
+        function showLogin() {
+            login.style.display = 'flex'
+        }
+
+        function hideLogin() {
+            login.style.display = 'none'
+        }
+
+        btnsLogin.forEach((btnLogin) => {
+            btnLogin.addEventListener('click', showLogin);
+        })
+
+        btnChangeLogin.addEventListener('click', showLogin);
+        btnChangeLogin.addEventListener('click', hideRegister);
+
+        loginSkip.addEventListener('click', hideLogin);
+        login.addEventListener('click', hideLogin);
+        loginContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+    </script>
+
+
+    <!-- Logged & registered  -->
+    <script>
+        // Register 
+        // validation form register and register user local storage
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const confirm_password = document.getElementById('confirm_password')
+        const Register_button = document.getElementById('js-btn-register');
+
+        // validation form register and register user local storage
+
+        Register_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (
+                email.value === "" ||
+                password.value === "" ||
+                confirm_password.value === ""
+            ) {
+                alert("vui lòng không để trống");
+            }
+            else if (confirm_password.value !== password.value) {
+                alert('Mật khẩu đăng ký và mật khẩu xác nhận không trùng khớp');
+            }
+            else {
+                // array user
+                const user = {
+                    email: email.value,
+                    password: password.value,
+                    confirm_password: confirm_password.value,
+                };
+                let json = JSON.stringify(user);
+                localStorage.setItem(email.value, json);
+                alert("Đăng Ký Thành Công");
+                window.location.href = "index.html";
+            }
+        });
+
+
+
+        // ---- Login ----
+        // validation form login
+        const email_login = document.getElementById('email_login');
+        const password_login = document.getElementById('password_login');
+        const Login_button = document.getElementById('js-btn-login');
+
+        // validation form login
+        Login_button.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (email_login.value === "" || password_login.value === "") {
+                alert("vui lòng không để trống");
+            } else {
+                const user = JSON.parse(localStorage.getItem(email_login.value));
+                if (
+                    user.email === email_login.value &&
+                    user.password === password_login.value
+                ) {
+                    alert("Bạn Đã Đăng Nhập Thành Công");
+                    window.location.href = "index.html";
+                }
+                else {
+                    alert("Đăng Nhập Thất Bại");
+                }
+            }
+        });
+
+    </script>
+
+    <!-- Show and hide password   -->
+    <script>
+        const showPasswordBtn = document.getElementById('show-login');
+        const showPsConfirmBtn = document.getElementById('show-confirm')
+        const showPsRegisterBtn = document.getElementById('show-register')
+        const password_input = document.getElementById('password_login');
+        const password_Confirm = document.getElementById('confirm_password');
+        const password_Register = document.getElementById('password');
+
+        function showPasswordLogin() {
+            if (password_input.type === 'password') {
+                password_input.setAttribute('type', 'text');
+                showPasswordBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_input.setAttribute('type', 'password');
+                showPasswordBtn.innerText = 'Hiện';
+            }
+        }
+
+        function showPasswordRegister() {
+            if (password_Register.type === 'password') {
+                password_Register.setAttribute('type', 'text');
+                showPsRegisterBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_Register.setAttribute('type', 'password');
+                showPsRegisterBtn.innerText = 'Hiện';
+            }
+        }
+
+        function showPasswordConfirmRegister() {
+            if (password_Confirm.type === 'password') {
+                password_Confirm.setAttribute('type', 'text');
+                showPsConfirmBtn.innerText = 'Ẩn';
+            }
+            else {
+                password_Confirm.setAttribute('type', 'password');
+                showPsConfirmBtn.innerText = 'Hiện';
+            }
+        }
+
+
+
+        showPasswordBtn.addEventListener('click', showPasswordLogin)
+        showPsRegisterBtn.addEventListener('click', showPasswordRegister)
+        showPsConfirmBtn.addEventListener('click', showPasswordConfirmRegister)
+
+    </script>
+
+    <!-- show Menu mobile -->
+    <script>
+        let btnShowMenuMobile = document.querySelector('.header__icon-show-menu-mobile');
+        let menuMobile = document.querySelector('.navbar-mobile');
+
+        function showMenu() {
+            menuMobile.classList.toggle('show-menu-mobile');
+            let icon = document.querySelector('.header__icon-show-menu-mobile i')
+
+            if (menuMobile.classList.contains('show-menu-mobile')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
+            }
+        }
+
+        btnShowMenuMobile.addEventListener('click', showMenu);
+    </script>
+</body>
+
+</html>
